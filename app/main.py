@@ -6,7 +6,7 @@ from datetime import datetime
 
 app=FastAPI(title="OrderFlow API",version="1.0.0")
 templates=Jinja2Templates(directory="templates")
-DB="orderflow.db"
+DB="/tmp/orderflow.db"
 STATUSES=["جدید","در حال پردازش","ارسال شد","تکمیل شد","لغو شد"]
 
 def conn():
